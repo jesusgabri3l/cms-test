@@ -1,0 +1,12 @@
+.img{
+    width:100%;
+    &--header{
+        position: absolute;
+        right: -$PADDING-SECTIONS;
+        top: -160px;
+        overflow: hidden;
+        @media only screen and (max-width: $S-TABLETS) {
+            display: none;
+        }
+    }
+}

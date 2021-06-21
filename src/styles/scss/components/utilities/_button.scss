@@ -1,0 +1,42 @@
+.button{
+    min-width: 7rem;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    background-color: $DARK-COLOR;
+    color : $ELEMENT-DARK-COLOR;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 0;
+    &--lg{
+       width: 9.5rem; 
+    }
+    &--40p{
+        width: 40%;
+        @media only screen and (max-width: $TABLETS) {
+            width : 60%;
+        }
+        @media only screen and (max-width: $M-PHONE) {
+            width : 100%;
+        }
+    }
+    &--secondary{
+        color: $GRAY-TEXT-COLOR;
+        background-color : $ELEMENT-DARK-COLOR;
+        &--outline{
+            border: 1px solid $GRAY-TEXT-COLOR;
+            font-weight: 500;
+            color : $GRAY-TEXT-COLOR;
+        }
+        &--transparent{
+            background-color: transparent;
+            color : $GRAY-TEXT-COLOR;
+            font-weight: 500;
+        }
+    }
+
+    &--primary{
+        background-color: $PRIMARY-COLOR;
+        color : $WHITE-COLOR;
+    }
+}

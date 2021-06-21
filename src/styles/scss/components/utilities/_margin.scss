@@ -1,0 +1,58 @@
+@mixin noMargin {
+    @media only screen and (max-width: $S-TABLETS) {
+        margin: 0;
+    }
+}
+//MARGIN RIGHT
+.mr-md-1{
+    margin-right: 10px;
+    @include noMargin;
+}
+.mr-md-2{
+    margin-right: 20px;
+    @include noMargin;
+}
+.mr-md-3{
+    margin-right: 30px;
+    @include noMargin;
+}
+.mr-md-4{
+    margin-right: 40px;
+    @include noMargin;
+}
+.mr-md-5{
+    margin-right: 50px;
+    @include noMargin;
+}
+
+//MARGIN TOP
+.mt-2{
+    margin-top: 20px;
+
+}
+.mt-md-1{
+    margin-top: 10px;
+    @include noMargin;
+}
+.mt-md-2{
+    margin-top: 20px;
+    @include noMargin;
+}
+.mt-md-3{
+    margin-top: 30px;
+    @include noMargin;
+}
+.mt-md-4{
+    margin-top: 40px;
+    @include noMargin;
+}
+.mt-md-5{
+    margin-top: 50px;
+    @include noMargin;
+}
+.mt-md-10{
+    margin-top: 100px;
+}
+.mt-md-20{
+    margin-top: 200px;
+}

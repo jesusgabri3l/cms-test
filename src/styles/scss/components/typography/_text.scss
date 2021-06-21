@@ -1,0 +1,13 @@
+.text{
+    margin: 0;
+    padding: 0;
+    &--white{
+        color: $WHITE-COLOR
+    }
+    &--primary{
+        color : $PRIMARY-COLOR;
+    }
+    &--gray{
+        color : $GRAY-TEXT-COLOR;
+    }
+}

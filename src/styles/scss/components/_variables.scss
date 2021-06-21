@@ -1,0 +1,31 @@
+//COLORS
+$PRIMARY-COLOR : #EF2A82;
+$DARK-COLOR : #172755;
+$ELEMENT-DARK-COLOR : #0F1F4B;
+$GRAY-TEXT-COLOR : #8794BA;
+$WHITE-COLOR : #fff;
+
+//PADDING
+@mixin PADDING-SECTIONS {
+    padding-right: $PADDING-SECTIONS;
+    padding-left: $PADDING-SECTIONS;
+    @media only screen and (max-width: $TABLETS) {
+        padding-right: $PADDING-SECTIONS / 1.5;
+        padding-left: $PADDING-SECTIONS / 1.5;
+    }
+    @media only screen and (max-width: $M-PHONE) {
+        padding-right: $PADDING-SECTIONS / 4;
+        padding-left: $PADDING-SECTIONS / 4;
+    }
+    @media only screen and (max-width: $S-PHONE) {
+        padding-right: $PADDING-SECTIONS / 6;
+        padding-left: $PADDING-SECTIONS/6;
+    }
+}
+$PADDING-SECTIONS : 6rem;
+
+//BREAK-POINTS
+$TABLETS : 1024px;
+$S-TABLETS : 895px;
+$M-PHONE: 585px;
+$S-PHONE : 330px;
