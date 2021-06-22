@@ -8,6 +8,9 @@
     cursor: pointer;
     border-radius: 30px;
     margin-bottom: 0;
+    @media only screen and (max-width: $S-PHONE) {
+        font-size: 15px;
+    }
     &--lg{
        width: 9.5rem; 
     }
@@ -23,6 +26,7 @@
     &--secondary{
         color: $GRAY-TEXT-COLOR;
         background-color : $ELEMENT-DARK-COLOR;
+        
         &--outline{
             border: 1px solid $GRAY-TEXT-COLOR;
             font-weight: 500;
@@ -38,5 +42,6 @@
     &--primary{
         background-color: $PRIMARY-COLOR;
         color : $WHITE-COLOR;
+
     }
 }

@@ -1,8 +1,10 @@
 @import "components/variables";
-@import "components/typography/text";
+@import "components/utilities/typography/text";
 @import "components/utilities/margin";
 @import "components/utilities/button";
-@import "components/utilities/container";
+@import "components/utilities/blocks/container";
+@import "components/utilities/blocks/grid";
+@import "components/utilities/blocks/card";
 @import "components/utilities/img";
 @import "components/header/header";
 
@@ -29,4 +31,14 @@ body{
 .section{
     min-height: 55vh;
     background-color:$WHITE-COLOR;
+    padding-bottom: 2rem;
+    &__first{
+        padding-top: 5rem;
+    }
+}
+.mb-1{
+    margin-bottom: 1rem !important;
+}
+.mt-1{
+    margin-top: 1rem !important;
 }

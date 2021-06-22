@@ -1,0 +1,42 @@
+.text{
+    margin: 0;
+    padding: 0;
+    letter-spacing:0.5px;
+    &--center{
+        text-align: center;
+    }
+    &--center--sm{
+        @media only screen and (max-width: $S-TABLETS){
+            text-align: center;
+        }
+    }
+    &--white{
+        color: $WHITE-COLOR
+    }
+    &--primary{
+        color : $PRIMARY-COLOR;
+    }
+    &--gray{
+        color : $GRAY-TEXT-COLOR;
+    }
+    &--dark{
+        color: $DARK-COLOR;
+    }
+
+    &--section{
+        &--title{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            @media only screen and (max-width: $TABLETS){
+                font-size: 32px;
+            }
+        }
+        &--text{
+            line-height:27px;
+            @media only screen and (max-width: $TABLETS){
+                font-size: 15px;
+            }
+        }
+    }
+}
