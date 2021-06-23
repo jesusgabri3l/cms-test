@@ -7,6 +7,7 @@
 @import "components/utilities/blocks/card";
 @import "components/utilities/img";
 @import "components/header/header";
+@import "components/footer/footer";
 
 
 *{
@@ -30,10 +31,13 @@ body{
 }
 .section{
     min-height: 55vh;
-    background-color:$WHITE-COLOR;
     padding-bottom: 2rem;
     &__first{
         padding-top: 5rem;
+    }
+    &--default{
+        min-height: 0;
+        padding-bottom: 0;
     }
 }
 .mb-1{

@@ -3,7 +3,6 @@
 </script>
 <header class="mx header">
     <Navbar />
-
     <section class="mt-3">
       <div class="container container--flex container--flex--header">
         <div class="container--flex__item">

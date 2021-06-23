@@ -11,7 +11,7 @@
         @media only screen and (max-width: $S-TABLETS) {
             column-gap: 0;
             grid-template-columns: repeat(1, 1fr);
-            row-gap: 15px;
+            row-gap: 30px;
         }
         .grid__item{
             width: 100%;

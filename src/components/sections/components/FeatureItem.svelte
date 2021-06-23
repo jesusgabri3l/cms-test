@@ -4,7 +4,7 @@
     export let text = 'Some default text'
     export let reverse = false;
 </script>
-<section class="grid grid--columns2 grid--columns2--reverse">
+<article class="grid grid--columns2">
   <div class="grid__item">
     {#if reverse}
         <div class="cardimg">
@@ -41,4 +41,4 @@
     </p>
     {/if}
   </div>
-</section>
+</article>
