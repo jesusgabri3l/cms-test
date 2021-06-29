@@ -593,7 +593,7 @@
   min-height: 100vh;
   width: 100vw;
   background-color: #172755;
-  background-image: url("/assets/img/bg-header1.svg"), url("/assets/img/bg-header2.svg");
+  background-image: url("assets/img/bg-header1.svg"), url("assets/img/bg-header2.svg");
   background-repeat: no-repeat;
   background-size: auto, contain;
   background-position: 0% 0%, 100% 100%;
@@ -625,7 +625,7 @@
 
 @media only screen and (max-width: 1024px) {
   .header {
-    background-image: url("/assets/img/bg-header1.svg");
+    background-image: url("assets/img/bg-header1.svg");
     background-size: cover;
     background-position: 50% 50%;
     min-height: 0;
@@ -790,7 +790,7 @@
   padding-bottom: 3rem;
   background-color: #172755;
   min-height: 100vh;
-  background-image: url(/assets/img/bg-header2.svg);
+  background-image: url(assets/img/bg-header2.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
