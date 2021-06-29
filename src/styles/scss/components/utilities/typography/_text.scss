@@ -5,6 +5,20 @@
     &--center{
         text-align: center;
     }
+    &--lineheight{
+        line-height: 27px;
+    }
+    &--title {
+        font-size: 52px;
+        margin-bottom: 15px;
+        letter-spacing: 0.8px;
+        @media only screen and (max-width: $TABLETS) {
+            font-size: 40px;
+        }
+        @media only screen and (max-width: $S-PHONE) {
+            font-size: 25px;
+        }
+    }
     &--center--sm{
         @media only screen and (max-width: $S-TABLETS){
             text-align: center;

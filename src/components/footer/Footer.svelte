@@ -5,10 +5,10 @@
 
 <footer class="footer">
   <section class="section section--default">
-    <h3 class="text text--white header__title text--center mt-5">
+    <h3 class="text text--white text--title text--center mt-5">
       Pricing plans
     </h3>
-    <p class="text text--gray text--center">
+    <p class="text text--gray text--center text--lineheight">
       Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sed
       doloribus voluptas, atque aspernatur recusandae culpa repellat natus,
       beatae suscipit ex, quod, quibusdam eaque ab soluta officiis asperiores

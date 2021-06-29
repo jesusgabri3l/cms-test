@@ -21,18 +21,7 @@
         justify-content: space-evenly;
         min-height: 100vh;
     }
-    &__title {
-        font-size: 52px;
-        margin-bottom: 15px;
-        letter-spacing: 0.8px;
-        @media only screen and (max-width: $TABLETS) {
-            font-size: 40px;
-        }
-
-        @media only screen and (max-width: $S-PHONE) {
-            font-size: 25px;
-        }
-    }
+    
     &__text {
         font-size: 18px;
         line-height: 27px;
