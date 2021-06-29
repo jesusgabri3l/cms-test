@@ -593,7 +593,7 @@
   min-height: 100vh;
   width: 100vw;
   background-color: #172755;
-  background-image: url("assets/img/bg-header1.svg"), url("assets/img/bg-header2.svg");
+  background-image: url("/assets/img/bg-header1.svg"), url("/assets/img/bg-header2.svg");
   background-repeat: no-repeat;
   background-size: auto, contain;
   background-position: 0% 0%, 100% 100%;
