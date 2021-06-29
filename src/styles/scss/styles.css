@@ -38,7 +38,7 @@
 
 @media only screen and (max-width: 1024px) {
   .text--section--title {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
@@ -178,12 +178,18 @@
   cursor: pointer;
   border-radius: 30px;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 330px) {
   .button {
     font-size: 15px;
   }
+}
+
+.button--block {
+  display: block;
+  width: 100%;
 }
 
 .button--lg {
@@ -331,13 +337,27 @@
             column-gap: 0;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    row-gap: 30px;
+    row-gap: 40px;
   }
 }
 
 .grid--columns3 .grid__item {
   width: 100%;
-  min-height: 30vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid--columns3 .grid__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .grid--columns2 {
@@ -373,7 +393,7 @@
 }
 
 .card {
-  width: 100%;
+  width: 300px;
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,11 +408,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   min-height: 400px;
   border: none;
   -webkit-box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
           box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 99%;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .card {
+    width: 90%;
+  }
 }
 
 .card__small {
@@ -404,28 +436,81 @@
   display: block;
   border: 1px solid #8794BA;
   width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  opacity: 0.4;
 }
 
 .card--dark {
   background-color: #0F1F4B;
+  color: #fff;
 }
 
 .card--dark .card__text {
-  color: #fff;
   font-size: 30px;
   margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 585px) {
+  .card--dark .card__text {
+    font-size: 28px;
+  }
+}
+
+.card--dark .card__price .card__price__sign {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 585px) {
+  .card--dark .card__price .card__price__sign {
+    font-size: 14px;
+  }
+}
+
+.card--dark .card__price .card__price__number {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 585px) {
+  .card--dark .card__price .card__price__number {
+    font-size: 24px;
+  }
 }
 
 .card--white {
   background-color: #fff;
+  color: #0F1F4B;
 }
 
 .card--white .card__text {
-  color: #0F1F4B;
   font-size: 30px;
   margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 585px) {
+  .card--white .card__text {
+    font-size: 28px;
+  }
+}
+
+.card--white .card__price .card__price__sign {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 585px) {
+  .card--white .card__price .card__price__sign {
+    font-size: 14px;
+  }
+}
+
+.card--white .card__price .card__price__number {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 585px) {
+  .card--white .card__price .card__price__number {
+    font-size: 24px;
+  }
 }
 
 .cardimg {
@@ -521,10 +606,11 @@
     background-image: url("/assets/img/bg-header1.svg");
     background-size: cover;
     background-position: 50% 50%;
+    min-height: 0;
   }
 }
 
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 895px) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -536,6 +622,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    min-height: 100vh;
   }
 }
 
@@ -545,7 +632,7 @@
   letter-spacing: 0.8px;
 }
 
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 1024px) {
   .header__title {
     font-size: 40px;
   }
@@ -562,6 +649,12 @@
   line-height: 27px;
   letter-spacing: 0.5px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__text {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 585px) {
@@ -614,23 +707,23 @@
   }
 }
 
-.navbar__logo {
+.logo {
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
 @media only screen and (max-width: 585px) {
-  .navbar__logo {
+  .logo {
     margin-bottom: 10px;
   }
 }
 
-.navbar__logo__img {
+.logo__img {
   width: 200px;
 }
 
-.navbar__list {
+.nav__list {
   padding: 0;
   margin: 0;
   margin-left: 35px;
@@ -643,12 +736,22 @@
 }
 
 @media only screen and (max-width: 895px) {
-  .navbar__list {
+  .nav__list {
     display: none;
   }
 }
 
-.navbar__list__item {
+@media only screen and (max-width: 895px) {
+  .nav__list--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+
+.nav__list__item {
   display: inline-block;
   margin-left: 30px;
   cursor: pointer;
@@ -657,21 +760,21 @@
   transition: 0.4s all;
 }
 
-.navbar__list__item:first-child {
+.nav__list__item:first-child {
   margin-left: 0;
 }
 
-.navbar__list__item:hover {
+.nav__list__item:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
 }
 
-.navbar__list__item__link {
+.nav__list__item__link {
   color: #8794BA;
   font-size: 15px;
 }
 
-.navbar__list__item__link:hover {
+.nav__list__item__link:hover {
   text-decoration: none;
   padding-bottom: 5px;
   border-bottom: 1px solid #8794BA;
@@ -680,12 +783,19 @@
 .footer {
   margin-top: 40px;
   padding-top: 5rem;
+  padding-bottom: 3rem;
   background-color: #172755;
-  min-height: 120vh;
+  min-height: 100vh;
   background-image: url(/assets/img/bg-header2.svg);
   background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    min-height: 0;
+  }
 }
 
 * {
@@ -707,7 +817,7 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .main-wrapper {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -742,6 +852,12 @@ body {
   padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section {
+    min-height: 32vh;
+  }
+}
+
 .section__first {
   padding-top: 5rem;
 }
@@ -757,5 +873,9 @@ body {
 
 .mt-1 {
   margin-top: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
 }
 /*# sourceMappingURL=styles.css.map */

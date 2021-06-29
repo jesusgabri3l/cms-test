@@ -1,41 +1,48 @@
-.header{
+.header {
     min-height: 100vh;
     width: 100vw;
     background-color: $DARK-COLOR;
-    background-image: url('/assets/img/bg-header1.svg'), url('/assets/img/bg-header2.svg');
+    background-image: url("/assets/img/bg-header1.svg"), url("/assets/img/bg-header2.svg");
     background-repeat: no-repeat;
     background-size: auto, contain;
     background-position: 0% 0%, 100% 100%;
     border-bottom: 6px solid $PRIMARY-COLOR;
     @include PADDING-SECTIONS;
+
     @media only screen and (max-width: $TABLETS) {
-    background-image: url('/assets/img/bg-header1.svg');
-    background-size: cover;
-    background-position: 50% 50%;
+        background-image: url("/assets/img/bg-header1.svg");
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 0;
     }
-    @media only screen and (max-width: $M-PHONE) {
+    @media only screen and (max-width: $S-TABLETS) {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        min-height: 100vh;
     }
-    &__title{
+    &__title {
         font-size: 52px;
         margin-bottom: 15px;
-        letter-spacing:0.8px;
-        @media only screen and (max-width: $M-PHONE) {
-            font-size : 40px;
+        letter-spacing: 0.8px;
+        @media only screen and (max-width: $TABLETS) {
+            font-size: 40px;
         }
+
         @media only screen and (max-width: $S-PHONE) {
             font-size: 25px;
         }
     }
-    &__text{
+    &__text {
         font-size: 18px;
-        line-height:27px;
-        letter-spacing:0.5px;
+        line-height: 27px;
+        letter-spacing: 0.5px;
         margin-bottom: 30px;
+        @media only screen and (max-width: $TABLETS) {
+            font-size: 17px;
+        }
         @media only screen and (max-width: $M-PHONE) {
-            font-size : 16px;
+            font-size: 16px;
         }
         @media only screen and (max-width: $S-PHONE) {
             font-size: 13.5px;
@@ -43,7 +50,7 @@
     }
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,53 +59,62 @@
     @media only screen and (max-width: $M-PHONE) {
         flex-direction: column;
     }
-    
-    &__section{
+
+    &__section {
         display: flex;
         @media only screen and (max-width: $S-PHONE) {
             flex-direction: column;
         }
     }
-    &__logo{
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-        @media only screen and (max-width: $M-PHONE){
-            margin-bottom: 10px;
-        }
-        &__img{
-            width:200px;
+}
+
+.logo {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    @media only screen and (max-width: $M-PHONE) {
+        margin-bottom: 10px;
+    }
+    &__img {
+        width: 200px;
+    }
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $S-TABLETS) {
+        display: none;
+    }
+    &--footer {
+        @media only screen and (max-width: $S-TABLETS) {
+            display: flex;
+            margin-top: 40px;
+            margin-left: 0;
         }
     }
-    &__list{
-        padding: 0;
-        margin: 0;
-        margin-left: 35px;
-        display: flex;
-        align-items: center;
-        @media only screen and (max-width: $S-TABLETS) {
-            display: none;
+    &__item {
+        display: inline-block;
+        margin-left: 30px;
+        cursor: pointer;
+        font-size: 15px;
+        &:first-child {
+            margin-left: 0;
         }
-        &__item{
-            display: inline-block;
-            margin-left: 30px;
-            cursor: pointer;
+        transition: 0.4s all;
+        &:hover {
+            transform: scale(1.15);
+        }
+        &__link {
+            color: $GRAY-TEXT-COLOR;
             font-size: 15px;
-            &:first-child{
-                margin-left: 0;
-            }
-            transition: 0.4s all;
-                &:hover{
-                    transform: scale(1.15);
-                }
-            &__link{
-                color: $GRAY-TEXT-COLOR; 
-                font-size: 15px;
-                &:hover{
-                    text-decoration: none;
-                    padding-bottom: 5px;
-                    border-bottom: 1px solid $GRAY-TEXT-COLOR;
-                }
+            &:hover {
+                text-decoration: none;
+                padding-bottom: 5px;
+                border-bottom: 1px solid $GRAY-TEXT-COLOR;
             }
         }
     }

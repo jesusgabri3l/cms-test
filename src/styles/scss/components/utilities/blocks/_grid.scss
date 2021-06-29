@@ -1,10 +1,32 @@
-.grid{
-    display:grid;
-    &--columns3{
-       grid-template-columns: repeat(3, 1fr); 
-       column-gap: 40px;
-       margin-top: 70px;
-       justify-content:center;
+.grid {
+    display: grid;
+    &--columns3 {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+        margin-top: 70px;
+        justify-content: center;
+        @media only screen and (max-width: $TABLETS) {
+            column-gap: 60px;
+        }
+        @media only screen and (max-width: $S-TABLETS) {
+            column-gap: 0;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 40px;
+        }
+        .grid__item {
+            width: 100%;
+            @media only screen and (max-width: $TABLETS) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+    &--columns2 {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+        margin-top: 80px;
+        justify-content: center;
         @media only screen and (max-width: $TABLETS) {
             column-gap: 60px;
         }
@@ -13,27 +35,9 @@
             grid-template-columns: repeat(1, 1fr);
             row-gap: 30px;
         }
-        .grid__item{
+
+        .grid__item {
             width: 100%;
-            min-height:30vh;
         }
     }
-    &--columns2{
-        grid-template-columns: repeat(2, 1fr); 
-        column-gap: 100px;
-        margin-top: 80px;
-        justify-content:center;
-         @media only screen and (max-width: $TABLETS) {
-             column-gap: 60px;
-         }
-         @media only screen and (max-width: $S-TABLETS) {
-            column-gap: 0;
-            grid-template-columns: repeat(1, 1fr); 
-            row-gap: 30px;
-         }
-         
-         .grid__item{
-            width: 100%;
-        }
-     }
 }
