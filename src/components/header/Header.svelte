@@ -1,5 +1,6 @@
 <script>
     import Navbar from "./Navbar.svelte";
+
 </script>
 <header class="mx header">
     <Navbar />

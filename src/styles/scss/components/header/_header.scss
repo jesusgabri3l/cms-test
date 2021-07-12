@@ -27,6 +27,9 @@
         line-height: 27px;
         letter-spacing: 0.5px;
         margin-bottom: 30px;
+        @media only screen and (min-width: $LG-DESKTOP) {
+            font-size: 18px;
+        }
         @media only screen and (max-width: $TABLETS) {
             font-size: 17px;
         }
@@ -61,11 +64,15 @@
     font-size: 16px;
     margin: 0;
     padding: 0;
+
     @media only screen and (max-width: $M-PHONE) {
         margin-bottom: 10px;
     }
     &__img {
         width: 200px;
+        @media only screen and (min-width: $LG-DESKTOP) {
+            width: 250px;
+        }
     }
 }
 
@@ -90,6 +97,7 @@
         margin-left: 30px;
         cursor: pointer;
         font-size: 15px;
+        
         &:first-child {
             margin-left: 0;
         }
@@ -100,6 +108,9 @@
         &__link {
             color: $GRAY-TEXT-COLOR;
             font-size: 15px;
+            @media only screen and (min-width: $LG-DESKTOP) {
+                font-size: 17px;
+            }
             &:hover {
                 text-decoration: none;
                 padding-bottom: 5px;

@@ -9,6 +9,7 @@ $WHITE-COLOR : #fff;
 @mixin PADDING-SECTIONS {
     padding-right: $PADDING-SECTIONS;
     padding-left: $PADDING-SECTIONS;
+
     @media only screen and (max-width: $TABLETS) {
         padding-right: $PADDING-SECTIONS / 1.5;
         padding-left: $PADDING-SECTIONS / 1.5;
@@ -25,6 +26,7 @@ $WHITE-COLOR : #fff;
 $PADDING-SECTIONS : 6rem;
 
 //BREAK-POINTS
+$LG-DESKTOP: 1920px;
 $TABLETS : 1024px;
 $S-TABLETS : 895px;
 $M-PHONE: 585px;

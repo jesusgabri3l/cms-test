@@ -12,6 +12,9 @@
         font-size: 52px;
         margin-bottom: 15px;
         letter-spacing: 0.8px;
+        @media only screen and (min-width: $LG-DESKTOP) {
+            font-size: 60px;
+        }
         @media only screen and (max-width: $TABLETS) {
             font-size: 40px;
         }
@@ -32,6 +35,9 @@
     }
     &--gray{
         color : $GRAY-TEXT-COLOR;
+        @media only screen and (min-width: $LG-DESKTOP) {
+            font-size: 18px;
+        }
     }
     &--dark{
         color: $DARK-COLOR;

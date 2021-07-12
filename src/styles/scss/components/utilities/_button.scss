@@ -12,6 +12,9 @@
     @media only screen and (max-width: $S-PHONE) {
         font-size: 15px;
     }
+    @media only screen and (min-width: $LG-DESKTOP) {
+        font-size: 18px;
+    }
 
     &--block{
         display: block;
