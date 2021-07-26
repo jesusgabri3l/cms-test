@@ -2250,7 +2250,7 @@ var app = (function () {
 
     const file = "src\\App.svelte";
 
-    // (47:2) {#if editableState}
+    // (45:2) {#if editableState}
     function create_if_block(ctx) {
     	let edition;
     	let current;
@@ -2282,7 +2282,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(47:2) {#if editableState}",
+    		source: "(45:2) {#if editableState}",
     		ctx
     	});
 
@@ -2320,9 +2320,9 @@ var app = (function () {
     			create_component(featureslist.$$.fragment);
     			t3 = space();
     			create_component(footer.$$.fragment);
-    			add_location(main, file, 51, 2, 1374);
+    			add_location(main, file, 49, 2, 1372);
     			attr_dev(div, "class", "main-wrapper");
-    			add_location(div, file, 45, 0, 1285);
+    			add_location(div, file, 43, 0, 1283);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

@@ -16,8 +16,6 @@
     }
   });
 
-
-
   document.onkeyup = function (e) {
     if (e.ctrlKey && e.keyCode == 75) {
       editableState = !editableState;
