@@ -9,10 +9,7 @@
       Pricing plans
     </h3>
     <p class="text text--gray text--center text--lineheight">
-      Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sed
-      doloribus voluptas, atque aspernatur recusandae culpa repellat natus,
-      beatae suscipit ex, quod, quibusdam eaque ab soluta officiis asperiores
-      porro doloremque.
+      Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sed doloribus voluptas, atque aspernatur recusandae culpa repellat natus, beatae suscipit ex, quod, quibusdam eaque ab soluta officiis asperiores porro doloremque.
     </p>
     <section class="grid grid--columns3">
       <div class="grid__item">
