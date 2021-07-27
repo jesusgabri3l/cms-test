@@ -16,11 +16,12 @@
     }
   });
 
+
   document.onkeyup = function (e) {
     if (e.ctrlKey && e.keyCode == 75) {
-      editableState = !editableState;
-      if(!editableState) save()
+      if(editableState) save()
       else{
+        editableState = true;
         const {p, h1, h2, h3} =  setElementsToEdit()
         elementsToTextArea(p, 'p')
         elementsToTextArea(h1, 'h1')
@@ -31,6 +32,7 @@
   };
 
   const save = () => {
+    editableState = false;
     const {p, h1, h2, h3} = getInputElements()
     inputsToElement(p, 'p')
     inputsToElement(h1, 'h1')
@@ -43,7 +45,7 @@
 
 <div class="main-wrapper">
   {#if editableState}
-    <Edition />
+    <Edition on:save = {save}/>
   {/if}
 
   <Header />
