@@ -1,11 +1,12 @@
 <script>
   import "./styles/scss/styles.css";
+  import {onMount} from 'svelte'
   import Header from "./components/header/Header.svelte";
   import FirstSection from "./components/sections/FirstSection.svelte";
   import FeaturesList from "./components/sections/FeaturesList.svelte";
   import Footer from "./components/footer/Footer.svelte";
   import Edition from "./components/layouts/Edition.svelte";
-  import {setElementsToEdit, getInputElements, elementsToTextArea, inputsToElement} from './functions/helper';
+  import {setElementsToEdit, getInputElements, elementsToTextArea, inputsToElement, data, checkForLocalStorage} from './functions/helper';
 
   let editableState = false;
 
@@ -16,6 +17,11 @@
     }
   });
 
+  onMount( () => {
+    if (localStorage.getItem('data')) {
+      checkForLocalStorage()
+    }
+  })
 
   document.onkeyup = function (e) {
     if (e.ctrlKey && e.keyCode == 75) {
@@ -28,6 +34,7 @@
         elementsToTextArea(h2, 'h2')
         elementsToTextArea(h3, 'h3')
       }
+      localStorage.setItem('data', JSON.stringify(data))
     }
   };
 
