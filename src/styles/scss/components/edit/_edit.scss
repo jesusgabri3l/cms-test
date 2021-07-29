@@ -53,6 +53,10 @@
                     margin: 0;
                     color: $ELEMENT-DARK-COLOR;
                     font-size: 18px;
+                    &:active{
+                        background-color: $PRIMARY-COLOR !important;
+                        outline: none;
+                    }
                 }
             }
         }

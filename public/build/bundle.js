@@ -2413,7 +2413,7 @@ var app = (function () {
     			create_component(featureslist.$$.fragment);
     			t3 = space();
     			create_component(footer.$$.fragment);
-    			add_location(main, file, 58, 2, 1624);
+    			add_location(main, file, 57, 2, 1623);
     			attr_dev(div, "class", "main-wrapper");
     			add_location(div, file, 52, 0, 1519);
     		},

@@ -54,7 +54,6 @@
   {#if editableState}
     <Edition on:save = {save}/>
   {/if}
-
   <Header />
   <main>
     <FirstSection />
