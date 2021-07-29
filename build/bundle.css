@@ -939,6 +939,11 @@
   font-size: 18px;
 }
 
+.edit__side__list__item__button:active {
+  background-color: #EF2A82 !important;
+  outline: none;
+}
+
 .edit-input {
   width: 100%;
   height: auto;
@@ -1051,5 +1056,9 @@ body {
 
 .mr-2 {
   margin-right: 20px;
+}
+
+button:not(:disabled):active {
+  background-color: transparent !important;
 }
 /*# sourceMappingURL=styles.css.map */
